@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Login</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <style>
+            body{
+            position: relative;
+            background-color: black;
+            align-content: center;
+            width: 100%;
+            margin: 0px !important;
+            padding: 0px !important;
+            height: 100dvh;
+            }
+
+            body::before{
+            background-image: url('/isometric-flat-3d-illustration-concept-of-computer-calculating-investment-business-income-free-vector.jpg');
+            background-size: cover;
+            content: '';
+            position: absolute;
+            inset: 0;
+            opacity: 0.1;
+            }
+
+            .navbar {
+                backdrop-filter: blur(30px);
+                box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+                border: 2px solid rgba(255,255,255,0.18);
+                min-height: 80px;
+                max-width: 80%;
+                min-width: 60%;
+                display: flex;
+                justify-self: center;
+                align-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                border-radius: 10px;
+            }
+
+            li{
+                list-style: none;
+                display: inline-block;
+                color: bisque;
+                padding: 10px;
+                font-size: 1.5rem;
+            }
+
+            .form-box {
+                width: 300px;
+                height: 400px;
+                justify-self: center;
+                backdrop-filter: blur(30px);
+                box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+                border: 2px solid rgba(255,255,255,0.18);
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                border-radius: 10px;
+                flex: 1;
+                margin-bottom: 30%;
+            }
+
+            h1 {
+                color: bisque;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.8rem;
+                text-align: center;
+                font-weight: lighter;
+            }
+
+            img{
+                border-radius: 50%;
+                width: 100px
+            }
+
+            .inputs {
+                margin-top: 10px;
+            }
+
+            .inner{
+                justify-content: center;
+                text-align: center;
+            }
+            
+            input{
+                color: black;
+            }
+
+            input:hover{
+                color: white;
+            }
+
+            .input-box {
+                margin-top: 20px;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid blue;
+                background-color: rgb(205, 238, 238);
+            }
+
+            .input-box:hover{
+                border: 1px solid rgb(255, 115, 0);
+                background-color: rgba(22, 235, 146, 0.007);
+            }
+
+            .submit-btn{
+                background-color: rgb(18, 165, 179);
+                display: block;
+                margin-top: 30px;
+                height: 40px;
+                width: 220px;
+                justify-self: center;
+                border-radius: 50px;
+            }
+
+            .submit-btn:hover{
+                background-color: rgb(20, 17, 226);
+            }
+
+            .lets-try{
+                color: bisque;
+                text-align: left;
+                padding-left: 60px;
+            }
+
+            .lets-try:hover{
+                color: yellow;
+            }
+
+            @media (max-width: 810px) {
+                body::before{
+                    background-image: url('./screenedit.jpg');
+                    background-size: cover;
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    opacity: 0.2;
+                }
+
+                body{
+                    background-color: black;
+                }
+
+                div.navbar {
+                    width: 100dvw;
+                    box-shadow: 0px 0px 30px rgba(64, 5, 202, 0.507);
+                    border: 2px solid rgba(5, 13, 61, 0.856);
+                    border-radius: 10px;
+                }
+
+                div.form-box{
+                    box-shadow: 0px 0px 30px rgba(64, 5, 202, 0.507);
+                    border: 2px solid rgba(5, 13, 61, 0.856);
+                    border-radius: 10px;
+                }
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <li><a href="./index.html" style="color: bisque; text-decoration: none;">Home</a></li>
+            <li>Services</li>
+            <li>News</li>
+            <li>Offers</li>
+            <li>Help</li>
+        </div>
+
+        <div class="form-box">
+            <form>
+                <div class="inner">
+                    <h1>Login</h1>
+                    <div>
+                        <img src="./user-circles-set_78370-4704.webp" /><br />
+                    </div>
+                    
+                    <input type="text" placeholder="   Username" label="Fname" class="input-box">
+                    <input type="password" placeholder="   Password" label="password" class="input-box"><br />
+                    <p  class="lets-try"><input type="checkbox"  />    Remember me</p>
+                    <input type="submit" value="LOGIN" class="submit-btn">
+                </div>
+            </form>
+        </div>
+        
+    </body>
+</html>
